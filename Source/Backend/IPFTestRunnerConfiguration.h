@@ -13,8 +13,9 @@
 @property (nonatomic, readonly) NSUInteger duration;
 @property (nonatomic, readonly) NSUInteger streams;
 @property (nonatomic, readonly) IPFTestRunnerConfigurationType type;
+@property (nonatomic, assign) IPFTestRunnerProtocol protocol;
+@property (nonatomic, assign) uint64_t targetBitrate;
 
-- (instancetype)initWithHostname:(NSString *)hostname port:(NSUInteger)port duration:(NSUInteger)duration streams:(NSUInteger)streams type:(IPFTestRunnerConfigurationType)type;
+- (instancetype)initWithHostname:(NSString *)hostname port:(NSUInteger)port duration:(NSUInteger)duration streams:(NSUInteger)streams type:(IPFTestRunnerConfigurationType)type protocol:(IPFTestRunnerProtocol)protocol;;
 
 @end
-
