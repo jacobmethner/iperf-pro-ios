@@ -11,7 +11,7 @@
 
 @implementation IPFTestRunnerConfiguration
 
-- (instancetype)initWithHostname:(NSString *)hostname port:(NSUInteger)port duration:(NSUInteger)duration streams:(NSUInteger)streams type:(IPFTestRunnerConfigurationType)type
+- (instancetype)initWithHostname:(NSString *)hostname port:(NSUInteger)port duration:(NSUInteger)duration streams:(NSUInteger)streams type:(IPFTestRunnerConfigurationType)type protocol:(IPFTestRunnerProtocol)protocol
 {
   if ((self = [super init])) {
     _hostname = [hostname copy];
@@ -19,6 +19,7 @@
     _duration = duration;
     _streams = streams;
     _type = type;
+    _protocol = protocol;
   }
 
   return self;
@@ -67,4 +68,3 @@
 }
 
 @end
-
